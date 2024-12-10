@@ -1,0 +1,14 @@
+{% extends "app_blogs/base.html" %}
+
+{% block title %}Blog Page{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="mb-4 mt-5">Welcome to the Blog Section!</h1>
+    <p class="mb-5">Choose an option below to get started.</p>
+    <div class="d-grid gap-4">
+        <a class="btn btn-primary btn-lg" href="{% url 'app_blogs:blogs_create' %}">Upload Your Blog</a>
+        <a class="btn btn-success btn-lg" href="{% url 'app_blogs:blogs_list' %}">Browse Blogs</a>
+    </div>
+</div>
+{% endblock %}

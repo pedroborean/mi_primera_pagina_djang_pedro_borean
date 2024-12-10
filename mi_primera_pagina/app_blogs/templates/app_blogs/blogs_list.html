@@ -1,0 +1,12 @@
+{% extends "app_blogs/base.html" %}
+
+{% extends "app_blogs/base.html" %}
+
+{% block title %}Upload Blog{% endblock %}
+
+{% block content %}
+{% for blog in blogs%}
+{{ blog.titulo }}
+{{ blog.autor }}
+{{ blog.fecha_publicacion }}
+{{ blog.contenido }}

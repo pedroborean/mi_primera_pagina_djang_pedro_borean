@@ -7,7 +7,7 @@ from .forms import Blogforms
 def index (request):
     return render(request, 'app_blogs/index.html')
 
-def listar_blogs (request):
+def blogs_list (request):
     blogs = Blog.objects.all()
     context = {'blogs': blogs}
     return render(request, 'app_blogs/blog_list.html', context)
@@ -23,3 +23,4 @@ def blogs_create(request):
         context = {'form': form}
 
     return render(request, 'app_blogs/blog_create.html', context)
+    
